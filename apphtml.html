@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Personal Task Manager</title>
+</head>
+<body>
+    <h1>Personal Task Manager</h1>
+    <form action="/cgi-bin/add_task.cgi" method="post">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required><br>
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" required><br>
+        <label for="due_date">Due date:</label>
+        <input type="date" id="due_date" name="due_date" required><br>
+        <label for="priority">Priority:</label>
+        <select id="priority" name="priority" required>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select><br>
+        <input type="submit" value="Add Task">
+    </form>
+</body>
+</html>
